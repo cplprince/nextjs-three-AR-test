@@ -1,3 +1,4 @@
+import Scene from '@/components/canvas/Scene'
 import { BrowserCompatibility } from '@zappar/zappar-react-three-fiber'
 import dynamic from 'next/dynamic'
 

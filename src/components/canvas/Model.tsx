@@ -3,6 +3,9 @@ import { useGLTF } from '@react-three/drei'
 
 const Model = () => {
   const { nodes, materials } = useGLTF('/assets/ZapparLog.glb')
+  // const { nodes, materials } = useGLTF('/assets/grabfigur.glb')
+  // console.log(nodes, materials)
+
   return (
     <mesh>
       <mesh
