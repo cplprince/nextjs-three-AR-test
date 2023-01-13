@@ -8,7 +8,7 @@ export const Background = ({ rotation }) => {
 
   return (
     <mesh ref={mesh} position={[0, 0, 0]} rotation={rotation}>
-      <planeBufferGeometry args={[3, 2]} />
+      <planeGeometry args={[3, 2]} />
       <meshStandardMaterial attach='material' map={cardBgTexture} />
     </mesh>
   )
