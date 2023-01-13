@@ -1,6 +1,6 @@
+// @ts-nocheck
 import { Sound } from '@/utils/Sound'
 import { useGLTF } from '@react-three/drei'
-
 const Model = () => {
   const { nodes, materials } = useGLTF('/assets/ZapparLog.glb')
   // const { nodes, materials } = useGLTF('/assets/grabfigur.glb')

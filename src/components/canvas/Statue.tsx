@@ -6,7 +6,7 @@ License: CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
 Source: https://sketchfab.com/3d-models/grabfigur-ed8966eacd2747adbaa86172f4b7c7eb
 Title: Grabfigur
 */
-
+// @ts-nocheck
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
