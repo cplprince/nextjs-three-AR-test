@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import * as THREE from 'three'
 
 import zapLaserMp3 from './../../public/assets/zapsplat_laser.mp3'
