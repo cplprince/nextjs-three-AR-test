@@ -2,6 +2,7 @@ import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Preload } from '@react-three/drei'
 import { ResizeObserver } from '@juggle/resize-observer'
 import { useEffect, useState } from 'react'
+import { ARCanvas, NFTMarker } from 'react-three-arnft'
 
 export default function Scene({ children, ...props }) {
   // Everything defined in here will persist between route changes, only children are swapped
@@ -12,7 +13,7 @@ export default function Scene({ children, ...props }) {
   }, [])
 
   return (
-    <Canvas
+    <ARCanvas
       flat
       resize={{ polyfill: ResizeObserver }}
       linear
@@ -25,6 +26,6 @@ export default function Scene({ children, ...props }) {
       {children}
       <Preload all />
       <OrbitControls />
-    </Canvas>
+    </ARCanvas>
   )
 }

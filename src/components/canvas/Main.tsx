@@ -9,7 +9,7 @@ const Main = ({ ...props }) => {
 
   return (
     <>
-      <ZapparCamera userCameraMirrorMode='none' rearCameraMirrorMode='none' />
+      {/* <ZapparCamera userCameraMirrorMode='none' rearCameraMirrorMode='none' />
       <ImageTracker
         onNotVisible={(anchor) => setVisible(false)}
         onNewAnchor={(anchor) => setVisible(true)}
@@ -23,7 +23,7 @@ const Main = ({ ...props }) => {
         onVisible={(anchor) => setVisibleStatue(true)}
         targetImage={'/assets/statue.zpt'}>
         <Statue visible={visibleStatue} />
-      </ImageTracker>
+      </ImageTracker> */}
     </>
   )
 }
