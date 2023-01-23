@@ -20,14 +20,14 @@ export default function Page(props) {
   return (
     <>
       {/* <BrowserCompatibility /> */}
-      <h1>Test</h1>
+      <Main />
     </>
   )
 }
 
 // Canvas components go here
 // It will receive same props as the Page component (from getStaticProps, etc.)
-Page.canvas = (props) => <Main scale={0.5} position-z={3} />
+// Page.canvas = (props) => <Main scale={0.5} position-z={3} />
 
 export async function getStaticProps() {
   return { props: { title: 'Index' } }

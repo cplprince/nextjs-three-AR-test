@@ -6,12 +6,12 @@ import Model from './Model'
 import Grid from './Grid'
 
 interface Props {
-  visible: boolean
+  visible?: boolean
 }
 
 const Card = ({ visible }: Props) => {
   return (
-    <group visible={visible} position={[0, 0, 0]} rotation={[1.5, 0, 0]}>
+    <group visible={visible || true} position={[0, 0, 0]} rotation={[1.5, 0, 0]} scale={0.3}>
       <Background rotation={[-1.5, 0, 0]} />
       <Icons />
       <Nametitle />

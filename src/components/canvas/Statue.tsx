@@ -13,7 +13,7 @@ import { useGLTF } from '@react-three/drei'
 export function Statue(props) {
   const { nodes, materials } = useGLTF('assets/grabfigur.glb')
   return (
-    <group {...props} dispose={null} rotation={[1.5, 0, 0]} position={[0, 0, 0]}>
+    <group {...props} dispose={null} rotation={[1.5, 0, 0]} position={[0, 0, 0]} scale={0.3}>
       <group rotation={[-Math.PI / 2, 0, -1.53]} scale={0.1}>
         <mesh geometry={nodes.Object_2.geometry} material={materials.Grabfigur_O_Material_u1_v1} />
         <mesh geometry={nodes.Object_3.geometry} material={materials.Grabfigur_O_Material_u1_v1} />
